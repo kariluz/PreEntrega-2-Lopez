@@ -1,0 +1,118 @@
+/*fuente local*/
+@font-face {
+    font-family: 'fuente-principal';
+    src: url('../assets/fuentes/YsabeauInfant-ExtraLightItalic.ttf');
+}
+
+/*color a mi header*/
+header {
+    background: #eff7f6;
+}
+
+.nav-bar {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    font-size: 18px;
+    font-family: 'fuente-principal';
+    font-weight: bold;
+}
+
+.menu-box {
+    display: inline-block;  
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    text-align: right;
+    display: inline;
+}
+
+/*coloreando las letras del menu*/
+.menu li a {
+    text-decoration: none;
+    color: #f2b5d4;
+    padding: 20px;
+    display: block;
+}
+
+/*ordenando mi lista en el menu*/
+.menu li {
+    display: inline-block;
+}
+
+.menu li a:hover {
+    background: #f2b5d4;
+    color: white;
+}
+
+.logo-nav {
+    display: inline-block;
+}
+
+.logo-nav img {
+    width: 95px;
+    height: 60px;
+}
+
+/*imagen de presentacion en home*/
+.hero-image {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('../assets/tulipan-home.jpg');
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*texto tipo eslogan*/
+.hero-text {
+    color: white;
+    text-align: center;
+    font-family: 'fuente-principal';
+    font-size: 30px;
+    position: absolute;
+    top: 28%;
+    left: 22%;
+    font-weight: bold;
+}
+
+.info-section {
+    padding: 20px 50px;
+    background-color: #FAE9DE;
+
+}
+.info-parrafo {
+    display: inline-block;    
+    font-size: 20px;
+    font-family: 'fuente-principal';
+    width: 45%;
+    margin-right: 50px;
+}
+
+.info-video {
+    display: inline-block;
+    width: 47%;
+    margin-left: 50px;
+}
+
+.video-home {
+    width: 100%;
+}
+
+/*footer*/
+.pie-de-pag {
+    color: #f2b5d4;
+    background-color: #eff7f6;
+    text-align: center;
+    font-family: 'fuente-principal';
+    height: 50px;
+}
+
+.pie-text {
+    margin-top: 0;
+    padding-top: 15px;
+}
