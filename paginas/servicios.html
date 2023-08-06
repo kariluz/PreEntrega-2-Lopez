@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="../bootstrap-5.3.1-dist/css/bootstrap.min.css">
     <!--CSS-->
     <link rel="stylesheet" href="../css/estilos.css">
     <!--fav-icon-->
@@ -12,46 +14,69 @@
 
 <!--barra de navegacion en mi pag de servicios-->
 <header>
-    <div class="logo-nav">
-        <a href="../index.html"><img src="../assets/logo.png" alt=""></a>
-    </div>
-    <div class="nav-bar">
-        <nav class="menu-box">
-            <ul class="menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>   
+        <!--Bootstrap en mi nav-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand nombre-site" href="../index.html"><img src="../assets/logo.png" alt="Bootstrap" width="60" height="40"> Kaloop By Kariluz</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto menu-boots">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="./servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>                  
+        </nav>  
 </header>
 <body>
     <main>
-        <div>
-            <img src="../assets/servicio-manicure-spa.jpg" alt="manicure-spa">
-            <h2>Manicure Spa</h2>
-            <p>La manicura spa emplea diferentes técnicas con un mismo propósito: que te relajes, y puedas recobrar la salud de tus manos o uñas castigadas por la falta de hidratación y de cuidados diarios. Los masajes son una parte imprescindible y marca registrada de toda manicura spa. Consiste en el básico: Lavado de manos, limpieza, corte y limado de uñas, empujar cutícula, exfoliación y masaje, y pulido.</p>
-        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <img class="img-thumbnail" src="../assets/servicio-manicure-spa.jpg" alt="manicure-spa">
+                </div>
+                <div class="col-md-8 col-sm-12">
+                    <h2>Manicure Spa</h2>
+                    <p>La manicura spa emplea diferentes técnicas con un mismo propósito: que te relajes, y puedas recobrar la salud de tus manos o uñas castigadas por la falta de hidratación y de cuidados diarios. Los masajes son una parte imprescindible y marca registrada de toda manicura spa. Consiste en el básico: Lavado de manos, limpieza, corte y limado de uñas, empujar cutícula, exfoliación y masaje, y pulido.</p>
+                </div>
+            </div>
 
-        <div>
-            <h2>Manicure Spa Permanente</h2>
-            <p>Es un tipo de manicura que se realiza con esmaltes especiales. A diferencia de los pintauñas comunes, los esmaltes permanentes se fijan con lámparas LED. También se puede realizar la pedicura con el mismo método y con unos resultados extraordinarios.</p>
-            <img src="../assets/servicio-manicure-permanente.jpg" alt="manicure-permanente">
-        </div>
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <h2>Manicure Spa Permanente</h2>
+                    <p>Es un tipo de manicura que se realiza con esmaltes especiales. A diferencia de los pintauñas comunes, los esmaltes permanentes se fijan con lámparas LED. También se puede realizar la pedicura con el mismo método y con unos resultados extraordinarios.</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <img class="img-thumbnail" src="../assets/servicio-manicure-permanente.jpg" alt="manicure-permanente">                    
+                </div>
+            </div>
 
-        <div>
-            <img src="../assets/servicio-uñas-acrilicas.jpg" alt="uñas-acrilicas">
-            <h2>Uñas acrilica</h2>
-            <p>Las uñas acrílicas son aquellas que se realizan con un polvo acrílico. El polvo acrílico (polímero) se seca rápidamente cuando se mezcla con un un agente líquido (monómero). Por ello no necesitan curado en lámpara, al contrario que las uñas de gel.</p>
-        </div>
-        
-        <div>
-            <h2>Uñas Gel y Soft Gel</h2>
-            <p>Las uñas de gel son un tipo de uña postiza hecha con un material acrílico que se adhiere a la uña mediante un pegamento específico con el fin de garantizar una manicura perfecta incluso en casos difíciles de reconstrucción como son pérdida de uña, uñas comidas o uñas quebradizas. Las uñas de soft gel Se adhieren con una base permanente especial y se curan con lámpara LED.</p>
-            <img src="../assets/servicio-uñas-gel.jpg" alt="uñas-gel">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <img class="img-thumbnail" src="../assets/servicio-uñas-acrilicas.jpg" alt="uñas-acrilicas">
+                </div>
+                <div class="col-md-8 col-sm-12">
+                    <h2>Uñas acrilica</h2>
+                    <p>Las uñas acrílicas son aquellas que se realizan con un polvo acrílico. El polvo acrílico (polímero) se seca rápidamente cuando se mezcla con un un agente líquido (monómero). Por ello no necesitan curado en lámpara, al contrario que las uñas de gel.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <h2>Uñas Gel y Soft Gel</h2>
+                    <p>Las uñas de gel son un tipo de uña postiza hecha con un material acrílico que se adhiere a la uña mediante un pegamento específico con el fin de garantizar una manicura perfecta incluso en casos difíciles de reconstrucción como son pérdida de uña, uñas comidas o uñas quebradizas. Las uñas de soft gel Se adhieren con una base permanente especial y se curan con lámpara LED.</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <img class="img-thumbnail" src="../assets/servicio-uñas-gel.jpg" alt="uñas-gel">
+                </div>
+            </div>        
         </div>
     </main>
-    <footer class="pie-de-pag"><h3 class="pie-text">Santiago de Chile - Todos los derechos y los izquierdos bien puestos</h3></footer> 
+    <footer class="pie-de-pag"><h3 class="pie-text">Santiago de Chile - Todos los derechos y los izquierdos bien puestos</h3></footer>
+    <script src="../bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
