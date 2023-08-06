@@ -59,6 +59,26 @@ header {
     color: white;
 }
 
+.menu-boots li {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.menu-boots li a {
+    color: #CD4EA8;
+    font-family: 'fuente-principal';
+    font-weight: bold;
+    font-size: 20px;
+    padding: 18px;
+}
+
+.menu-boots li:hover{
+    background: #CD4EA8;
+}
+
+.menu-boots li:hover a {
+    color: white;
+}
+
 .logo-nav {
     display: inline-block;
 }
