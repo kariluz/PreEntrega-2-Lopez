@@ -3,52 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.min.css">
     <!--CSS-->
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="shortcut icon" href="./assets/image-favicon.png" type="image/png">
     <title>Kaloop | Home</title>
 </head>
-<body">
+<body>
     <!--HTML Semantico-->
     <header>
         <!--barra de navegacion-->
-        <div class="logo-nav">
-            <a href="#"><img src="./assets/logo.png" alt=""></a>
-        </div>
-        <div class="nav-bar">
-            <nav class="menu-box">
-                <ul class="menu">        
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./paginas/productos.html">Productos</a></li>
-                    <li><a href="./paginas/servicios.html">Servicios</a></li>
-                    <li><a href="./paginas/contacto.html">Contacto</a></li>
-                    <!--<li><a href="">Sobre nosotros</a></li>-->
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand nombre-site" href="#"><img src="./assets/logo.png" alt="Bootstrap" width="60" height="40"> Kaloop By Kariluz</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto menu-boots">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./paginas/productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./paginas/servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./paginas/contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./paginas/sobre-nosotros.html">sobre nosotros</a></li>
+                    </ul>
+                </div>
+            </div>                  
+        </nav> 
     </header>
 
-    <main>
+    <main class="container-fluid">
         <!--imagen de presentacion en home-->
         <section>
-        <div class="hero-image">
-            <div class="hero-text">
+        <div class="row hero-image">
+            <div class="hero-text col-md-12 col-sm-12">
                 <h1>Tus manos y tus uñas son tu reflejo, cuidalas bien</h1>
             </div>
         </div>
         </section>        
         <!--Caja informatica-->
-        <section class="info-section">        
-            <div class="info-parrafo">
-                <h2>Por qué es importante el cuidado de tus manos?</h2>
-                <p>Nuestras manos son más importantes de lo que solemos pensar, son nuestra carta de presentación al conocer a alguien, son nuestra herramienta de trabajo, y por sobre todas las cosas son un instrumento hermoso a la hora de demostrar nuestro AMOR a través de caricias y abrazos. Esta zona de nuestro cuerpo, al igual que el rostro, se reseca y envejece por su permanente exposición a las agresiones externas. Por tanto lo que podrás imaginar que sólo el agua y el jabón no son suficientes para mantenerlas en buenas condiciones. También el cuidado de las uñas es importante ya que forman parte indisoluble de las manos y además influyen positiva o negativamente en la apariencia estética de éstas; es recomendable hacerse la manicura de forma regular o acudir a una manicura profesional esporádicamente para mantener la salud y el buen aspecto de nuestras manos.
-                </p>
+        <section class="container-fluid info-section"> 
+            <div class="row">
+                <div class="col-md-6 col-sm-12 info-parrafo">
+                    <h2><b>Por qué es importante el cuidado de tus manos?</b></h2>
+                    <p>Nuestras manos son más importantes de lo que solemos pensar, son nuestra carta de presentación al conocer a alguien, son nuestra herramienta de trabajo, y por sobre todas las cosas son un instrumento hermoso a la hora de demostrar nuestro <b>AMOR</b> a través de caricias y abrazos. Esta zona de nuestro cuerpo, al igual que el rostro, se reseca y envejece por su permanente exposición a las agresiones externas. Por tanto lo que podrás imaginar que sólo el agua y el jabón no son suficientes para mantenerlas en buenas condiciones. También <b>el cuidado de las uñas</b> es importante ya que forman parte indisoluble de las manos y además influyen positiva o negativamente en la apariencia estética de éstas; es recomendable hacerse la manicura de forma regular o acudir a una manicura profesional esporádicamente para <b>mantener la salud y el buen aspecto de nuestras manos</b>.
+                    </p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <iframe class="video-home" height="315" src="https://www.youtube.com/embed/bLl0YPUA49w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>               
             </div>
-            <div class="info-video">
-                <iframe class="video-home" height="315" src="https://www.youtube.com/embed/bLl0YPUA49w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
+
         </section>
     </main>
-    <footer class="pie-de-pag"><h3 class="pie-text">Santiago de Chile - Todos los derechos y los izquierdos bien puestos</h3></footer>    
+    <footer class="pie-de-pag"><h3 class="pie-text">Santiago de Chile - Todos los derechos y los izquierdos bien puestos</h3></footer>
+    <script src="./bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>    
 </body>
 </html>

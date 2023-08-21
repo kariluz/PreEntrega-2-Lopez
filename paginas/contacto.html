@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="../bootstrap-5.3.1-dist/css/bootstrap.min.css">
     <!--CSS-->
     <link rel="stylesheet" href="../css/estilos.css">
     <!--fav-icon-->
@@ -12,61 +14,65 @@
 
 <!--barra de navegacion en mi pag de contacto-->
 <header>
-    <div class="logo-nav">
-        <a href=""><img src="../assets/logo.png" alt=""></a>
-    </div>
-    <div class="nav-bar">
-        <nav class="menu-box">
-            <ul class="menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>   
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand nombre-site" href="../index.html"><img src="../assets/logo.png" alt="Bootstrap" width="60" height="40"> Kaloop By Kariluz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto menu-boots">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./sobre-nosotros.html">sobre nosotros</a></li>
+                </ul>
+            </div>
+        </div>                  
+    </nav>    
 </header>
 
 <body>
-    <main>   
+    <main class="container body-content">   
         <!--seccion de contacto-->
-        <section>
-            <div>
+        <section class="row info-contacto">
+            <div class="col-md-6 col-sm-12">
                 <h2>Contactanos</h2>
-                <p>En <b>Kaloop</b> estamos interesados en saber tu opnion y poder ayudarte de una mejor manera, puedes contactarnos a nuestros numeros y correo electronico, o seguirnos en nuestras redes sociales, te esperamos!</p>
+                <p>En <b>Kaloop</b> estamos interesados en saber tu opnion y poder ayudarte de una mejor manera, puedes contactarnos a traves de nuestros numeros telefonicos y correo electronico, y tambien puedes seguirnos en nuestras redes sociales, te esperamos!</p>
             </div> 
-            <form action="" method="post">
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" placeholder="Escribe tu nombre">
+            <form class="col-md-6 col-sm-12" action="" method="post" >
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" placeholder="Escribe tu nombre">
                 </div>
 
-                <div>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" placeholder="Escribe tu apellido">
+                <div class="mb-3">
+                    <label class="form-label" for="apellido">Apellido</label>
+                    <input type="text" class="form-control" name="apellido" placeholder="Escribe tu apellido">
                 </div>
 
-                <div>
-                    <label for="email">Email</label>
-                    <input type="text" name="email" placeholder="Correo electronico">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email" placeholder="Correo electronico">
                 </div>
 
-                <div>
-                    <label for="mensaje">Mensaje</label>
-                    <input type="text" name="mensaje" placeholder="Escribe aqui tu consulta">
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <input type="text" class="form-control" rows="3" name="mensaje" placeholder="Escribe aqui tu consulta">
                 </div>
 
-                <button type="submit">Enviar Mensaje</button>
+                <button type="submit" class="btn btn-outline-secondary">Enviar Mensaje</button>
             </form>
         </section>
 
         <!--seccion de ubicacion-->
-        <section>        
-            <div>
+        <section class="row info-ubi">        
+            <div class="col-md-6 col-sm-12">
                 <img src="../assets/ubicacion-img.jpg" alt="imagen-ubicacion">
             </div>
             
-            <div>
+            <div class="col-md-6 col-sm-12 ">
                 <h2>Ubicación y comunicación</h2>
                 <div><p><b>Direccion:</b> Av. Los Arcos del angel 1594, local 56. </p></div>
                 <div><p><b>Telefono:</b> 9 8765 4321 / 1 2345 6789</p></div>
@@ -76,5 +82,6 @@
         </section>
     </main>
     <footer class="pie-de-pag"><h3 class="pie-text">Santiago de Chile - Todos los derechos y los izquierdos bien puestos</h3></footer>    
+    <script src="../bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
