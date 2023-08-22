@@ -1,0 +1,232 @@
+/*Variables*/
+$color-principal: #CD4EA8;
+$color-segundo: #f3ede9;
+$color-tercero: #9f227c;
+$color-cuarto: white;
+$color-quinto: #eff7f6;
+$color-sexto: #FAE9DE;
+
+/*fuente local*/
+@font-face {
+    font-family: 'fuente-principal';
+    src: url('../assets/fuentes/YsabeauInfant-ExtraLightItalic.ttf');
+}
+
+@font-face {
+    font-family: 'fuente-secundaria';
+    src: url('../assets/fuentes/Montserrat-Light.ttf');
+}
+
+/*color a mi header*/
+header {
+    background: $color-quinto;
+}
+
+
+.nav-bar {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+}
+
+.menu-box {
+    display: inline-block;  
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    text-align: right;
+    display: inline;
+    li {
+        /*ordenando mi lista en el menu*/ 
+        display: inline-block;
+        /*coloreando las letras del menu*/
+        a {
+            text-decoration: none;
+            color: $color-principal;
+            padding: 20px;
+            display: block;
+            font-size: 18px;
+            font-family: 'fuente-secundaria';
+            font-weight: bold;
+            &hover {
+                background: $color-principal;
+                color: $color-cuarto;
+            }
+        }
+    }
+}
+
+/* estilo para el nombre del sitio */
+.nombre-site {
+    font-family: 'fuente-principal';
+    color: $color-principal;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.menu-boots li {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* estilo para el menu usando bootstrap */
+.menu-boots li a {
+    color: $color-principal;
+    font-family: 'fuente-secundaria';
+    font-weight: bold;
+    font-size: 20px;
+    padding: 18px;
+}
+
+.menu-boots li:hover{
+    background: $color-principal;
+}
+
+.menu-boots li:hover a {
+    color: $color-cuarto;
+}
+
+.body-content {
+    background-color: $color-segundo ;
+}
+
+/* estilo en texto de pag de servicios */
+.text-def {
+    font-family: 'fuente-secundaria';
+    color: $color-principal;
+    font-size: 23PX;
+    margin-top: 30px;
+}
+
+/* estilo en texto de pag de productos */
+.text-producto {
+    font-family: 'fuente-secundaria';
+    color: $color-principal;
+    font-size: 20PX;
+    margin-top: 30px;
+}
+
+.logo-nav {
+    display: inline-block;
+    img {
+        width: 95px;
+        height: 60px; 
+    }
+}
+
+/*imagen de presentacion en home*/
+.hero-image {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('../assets/tulipan-home.jpg');
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*texto tipo eslogan*/
+.hero-text {
+    color: $color-cuarto;
+    text-align: center;
+    font-family: 'fuente-principal';
+    font-size: 30px;
+    position: absolute;
+    top: 35%;
+    font-weight: bold;
+}
+
+.info-section {
+    padding: 20px 50px;
+    background-color: $color-sexto;
+    margin-top: 20px;
+}
+
+.info-parrafo {
+    color: $color-tercero;   
+    font-size: 20px;
+    font-family: 'fuente-principal';
+    padding-right: 50px;
+}
+
+.info-video {
+    padding-left: 50px;
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
+
+.video-home {
+    width: 100%;
+}
+
+/*footer*/
+.pie-de-pag {
+    color: $color-principal;
+    background-color: $color-quinto;
+    text-align: center;
+    font-family: 'fuente-principal';
+    height: 50px;
+}
+
+.pie-text {
+    margin-top: 0;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+/* productos */
+.card-product {
+    height: 610px;
+}
+
+.product-img {
+    height: 280px;
+}
+
+/* sobre nosotros */
+.text-nosotros {
+    padding: 20px;
+    padding-top: 5%;
+    color: $color-principal;
+    background: $color-segundo;
+    font-family: 'fuente-secundaria';
+}
+
+.img-nosotros {
+    padding: 40px;
+}
+
+/* contacto */
+.info-contacto {
+    color: $color-principal;
+    padding: 35px;
+    margin-bottom: 5%;
+    font-family: 'fuente-secundaria';
+}
+
+/* ubicacion */
+.info-ubi {
+    color: $color-principal;
+    font-family: 'fuente-secundaria';
+    img {
+        width: 350px;
+        height:250px; 
+        margin-left: 20%;
+        margin-bottom: 10%;    
+    }
+}
+
+h1 {
+    font-family: 'fuente-principal';
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'fuente-principal';
+    font-weight: bold;    
+}

@@ -1,228 +1,223 @@
+/*Variables*/
 /*fuente local*/
 @font-face {
-    font-family: 'fuente-principal';
-    src: url('../assets/fuentes/YsabeauInfant-ExtraLightItalic.ttf');
+  font-family: "fuente-principal";
+  src: url("../assets/fuentes/YsabeauInfant-ExtraLightItalic.ttf");
 }
-
 @font-face {
-    font-family: 'fuente-secundaria';
-    src: url('../assets/fuentes/Montserrat-Light.ttf');
+  font-family: "fuente-secundaria";
+  src: url("../assets/fuentes/Montserrat-Light.ttf");
 }
-
 /*color a mi header*/
 header {
-    background: #eff7f6;
+  background: #eff7f6;
 }
 
 .nav-bar {
-    display: inline-block;
-    vertical-align: top;
-    float: right;
+  display: inline-block;
+  vertical-align: top;
+  float: right;
 }
 
 .menu-box {
-    display: inline-block;  
+  display: inline-block;
 }
 
 .menu {
-    list-style: none;
-    padding: 0;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    text-align: right;
-    display: inline;
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  text-align: right;
+  display: inline;
+}
+.menu li {
+  /*ordenando mi lista en el menu*/
+  display: inline-block;
+  /*coloreando las letras del menu*/
+}
+.menu li a {
+  text-decoration: none;
+  color: #CD4EA8;
+  padding: 20px;
+  display: block;
+  font-size: 18px;
+  font-family: "fuente-secundaria";
+  font-weight: bold;
+}
+.menu li ahover {
+  background: #CD4EA8;
+  color: white;
 }
 
 /* estilo para el nombre del sitio */
 .nombre-site {
-    font-family: 'fuente-principal';
-    color: #CD4EA8;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    
-}
-
-/*coloreando las letras del menu*/
-.menu li a {
-    text-decoration: none;
-    color: #CD4EA8;
-    padding: 20px;
-    display: block;
-    font-size: 18px;
-    font-family: 'fuente-secundaria';
-    font-weight: bold;
-}
-
-/*ordenando mi lista en el menu*/
-.menu li {
-    display: inline-block;
-}
-
-.menu li a:hover {
-    background: #CD4EA8;
-    color: white;
+  font-family: "fuente-principal";
+  color: #CD4EA8;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .menu-boots li {
-    padding-left: 25px;
-    padding-right: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 /* estilo para el menu usando bootstrap */
 .menu-boots li a {
-    color: #CD4EA8;
-    font-family: 'fuente-secundaria';
-    font-weight: bold;
-    font-size: 20px;
-    padding: 18px;
+  color: #CD4EA8;
+  font-family: "fuente-secundaria";
+  font-weight: bold;
+  font-size: 20px;
+  padding: 18px;
 }
 
-.menu-boots li:hover{
-    background: #CD4EA8;
+.menu-boots li:hover {
+  background: #CD4EA8;
 }
 
 .menu-boots li:hover a {
-    color: white;
+  color: white;
 }
 
 .body-content {
-    background-color: #f3ede9 ;
+  background-color: #f3ede9;
 }
 
 /* estilo en texto de pag de servicios */
 .text-def {
-    font-family: 'fuente-secundaria';
-    color: #CD4EA8;
-    font-size: 23PX;
-    margin-top: 30px;
+  font-family: "fuente-secundaria";
+  color: #CD4EA8;
+  font-size: 23PX;
+  margin-top: 30px;
 }
 
 /* estilo en texto de pag de productos */
 .text-producto {
-    font-family: 'fuente-secundaria';
-    color: #CD4EA8;
-    font-size: 20PX;
-    margin-top: 30px;
+  font-family: "fuente-secundaria";
+  color: #CD4EA8;
+  font-size: 20PX;
+  margin-top: 30px;
 }
 
 .logo-nav {
-    display: inline-block;
+  display: inline-block;
 }
-
 .logo-nav img {
-    width: 95px;
-    height: 60px;
+  width: 95px;
+  height: 60px;
 }
 
 /*imagen de presentacion en home*/
 .hero-image {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('../assets/tulipan-home.jpg');
-    min-height: 450px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/tulipan-home.jpg");
+  min-height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*texto tipo eslogan*/
 .hero-text {
-    color: white;
-    text-align: center;
-    font-family: 'fuente-principal';
-    font-size: 30px;
-    position: absolute;
-    top: 35%;
-    font-weight: bold;
+  color: white;
+  text-align: center;
+  font-family: "fuente-principal";
+  font-size: 30px;
+  position: absolute;
+  top: 35%;
+  font-weight: bold;
 }
 
 .info-section {
-    padding: 20px 50px;
-    background-color: #FAE9DE;
-    margin-top: 20px;
+  padding: 20px 50px;
+  background-color: #FAE9DE;
+  margin-top: 20px;
 }
 
 .info-parrafo {
-    color: #9f227c;   
-    font-size: 20px;
-    font-family: 'fuente-principal';
-    padding-right: 50px;
+  color: #9f227c;
+  font-size: 20px;
+  font-family: "fuente-principal";
+  padding-right: 50px;
 }
 
 .info-video {
-    padding-left: 50px;
-    margin-top: 6%;
-    margin-bottom: 50px;
+  padding-left: 50px;
+  margin-top: 6%;
+  margin-bottom: 50px;
 }
 
 .video-home {
-    width: 100%;
+  width: 100%;
 }
 
 /*footer*/
 .pie-de-pag {
-    color: #CD4EA8;
-    background-color: #eff7f6;
-    text-align: center;
-    font-family: 'fuente-principal';
-    height: 50px;
+  color: #CD4EA8;
+  background-color: #eff7f6;
+  text-align: center;
+  font-family: "fuente-principal";
+  height: 50px;
 }
 
 .pie-text {
-    margin-top: 0;
-    padding-top: 10px;
-    font-weight: bold;
+  margin-top: 0;
+  padding-top: 10px;
+  font-weight: bold;
 }
 
 /* productos */
 .card-product {
-    height: 610px;
+  height: 610px;
 }
 
 .product-img {
-    height: 280px;
+  height: 280px;
 }
 
 /* sobre nosotros */
 .text-nosotros {
-    padding: 20px;
-    padding-top: 5%;
-    color: #CD4EA8;
-    background: #f3ede9;
-    font-family: 'fuente-secundaria';
+  padding: 20px;
+  padding-top: 5%;
+  color: #CD4EA8;
+  background: #f3ede9;
+  font-family: "fuente-secundaria";
 }
 
 .img-nosotros {
-    padding: 40px;
+  padding: 40px;
 }
 
 /* contacto */
 .info-contacto {
-    color: #CD4EA8;
-    padding: 35px;
-    margin-bottom: 5%;
-    font-family: 'fuente-secundaria';
+  color: #CD4EA8;
+  padding: 35px;
+  margin-bottom: 5%;
+  font-family: "fuente-secundaria";
 }
 
 /* ubicacion */
 .info-ubi {
-    color: #CD4EA8;
-    font-family: 'fuente-secundaria';
+  color: #CD4EA8;
+  font-family: "fuente-secundaria";
 }
-
 .info-ubi img {
-    width: 350px;
-    height:250px; 
-    margin-left: 20%;
-    margin-bottom: 10%;
+  width: 350px;
+  height: 250px;
+  margin-left: 20%;
+  margin-bottom: 10%;
 }
 
 h1 {
-    font-family: 'fuente-principal';
-    font-weight: bold;
+  font-family: "fuente-principal";
+  font-weight: bold;
 }
 
 h2 {
-    font-family: 'fuente-principal';
-    font-weight: bold;    
+  font-family: "fuente-principal";
+  font-weight: bold;
 }
+
+/*# sourceMappingURL=estilos.css.map */
