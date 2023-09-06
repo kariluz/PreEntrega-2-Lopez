@@ -204,9 +204,7 @@ header {
   font-family: "fuente-secundaria";
 }
 .info-ubi img {
-  width: 350px;
-  height: 250px;
-  margin-left: 20%;
+  max-height: 355px;
   margin-bottom: 10%;
 }
 
@@ -218,6 +216,10 @@ h1 {
 h2 {
   font-family: "fuente-principal";
   font-weight: bold;
+}
+
+.img-ubi {
+  text-align: center;
 }
 
 /*# sourceMappingURL=estilos.css.map */

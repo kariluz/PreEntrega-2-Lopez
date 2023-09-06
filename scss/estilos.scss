@@ -22,7 +22,6 @@ header {
     background: $color-quinto;
 }
 
-
 .nav-bar {
     display: inline-block;
     vertical-align: top;
@@ -214,9 +213,8 @@ header {
     color: $color-principal;
     font-family: 'fuente-secundaria';
     img {
-        width: 350px;
-        height:250px; 
-        margin-left: 20%;
+        max-height: 355px;
+        // height:250px; 
         margin-bottom: 10%;    
     }
 }
@@ -229,4 +227,8 @@ h1 {
 h2 {
     font-family: 'fuente-principal';
     font-weight: bold;    
+}
+
+.img-ubi {
+    text-align: center;
 }
